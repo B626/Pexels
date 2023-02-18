@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,800);
+body {
+  background: url(../assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #fff;
+}
+
+.wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.header {
+  padding: 22px 22px 0 22px;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.header__btn {
+  font-size: 20px;
+  line-height: 27px;
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  color: #fff;
+  padding: 6px 19px;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.header__btn:hover {
+  border: 1px solid transparent;
+  background-color: #fff;
+  color: #000;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__inner {
+  padding: 30px 0 0 0;
+}
+
+.intro__title {
+  font-size: 100px;
+  line-height: 117px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-align: center;
+}
+
+.intro__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 0 80px 0;
+}
+
+.google__input-area {
+  margin: 0 auto;
+  position: relative;
+  width: 655px;
+}
+
+.google__input {
+  width: 100%;
+  border-radius: 80px;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
+  padding: 22px;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0 auto 20px;
+}
+
+.google__input::-webkit-input-placeholder {
+  color: rgba(189, 189, 189, 0.8);
+}
+
+.google__input:-ms-input-placeholder {
+  color: rgba(189, 189, 189, 0.8);
+}
+
+.google__input::-ms-input-placeholder {
+  color: rgba(189, 189, 189, 0.8);
+}
+
+.google__input::placeholder {
+  color: rgba(189, 189, 189, 0.8);
+}
+
+.google__button {
+  cursor: pointer;
+}
+
+.google__search-icon {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  cursor: pointer;
+}
+
+.google-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.google-list__link {
+  color: #fff;
+  font-size: 20px;
+}
+
+.google-list__link:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: absolute;
+  bottom: 22px;
+  padding: 0 22px;
+  width: 100%;
+}
+
+.footer__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+}
+
+.footer__link {
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__ic {
+  max-width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.footer__ic:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+@media (max-width: 768px) {
+  .google__input-area {
+    width: 540px;
+  }
+  .google-list__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 577px) {
+  .google__input-area {
+    width: 465px;
+  }
+  .header__btn {
+    font-size: 25px;
+  }
+  .header__burger-src {
+    height: 40px;
+  }
+  .intro__title {
+    font-size: 80px;
+  }
+  .intro__subtitle {
+    font-size: 22px;
+    margin: 0 0 70px 0;
+  }
+  .google__nav {
+    display: none;
+  }
+  .footer__inner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__icons {
+    gap: 67px;
+  }
+  .footer__ic {
+    height: 42px;
+  }
+  .footer__link {
+    display: none;
+  }
+  .main__inner {
+    padding: 85px 0 0 0;
+  }
+}
+
+@media (max-width: 507px) {
+  .google__input-area {
+    width: 395px;
+  }
+}
+
+@media (max-width: 435px) {
+  .google__input-area {
+    width: 333px;
+  }
+}
+
+@media (max-width: 360px) {
+  .google__input-area {
+    width: 310px;
+  }
+  .header__btn {
+    font-size: 20px;
+  }
+}
